@@ -77,13 +77,13 @@ body{
 }
 
 .login-but{
-    padding:0.7rem 1.7rem;
+    padding:0.5rem 1.9rem;
     border:none;
     border-radius:2rem;
     /*   ------Add shadow to the button------  */
     background-color:white;
     color:rgb(0, 0, 0);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1rem;
 }
 
@@ -127,14 +127,14 @@ body{
 }
 
 .text-container button{
-    padding:0.6rem 2.3rem;
+    padding:0.5rem 3rem;
     border:none;
     border-radius:2rem;
     background-color:white;
     color:black;
-    font-weight: 600;
+    font-weight: 750;
     font-size: 1.5rem;
-    margin-top:2.5rem;
+    margin-top:3rem;
 }
 
 .text-container button:hover{
@@ -200,7 +200,7 @@ body{
 .key-box{
     background-color: #3332322c;
     border-radius: 3rem;
-    max-width:75rem;
+    max-width:90rem;
     margin:0 auto;
     padding:0 2rem;
     color:white;
@@ -225,7 +225,7 @@ body{
 }
 
 .key{
-    width: 50rem;
+    width: 75rem;
     padding: 1rem;
     background: rgba(75, 75, 75, 0.279);
     border-radius: 15px;
@@ -252,13 +252,13 @@ body{
 .academy-box {
     position: relative;
     z-index: 2; /* Ensure content is above the aurora effect */
-    max-width: 75rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 3rem 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 2.5rem;
     margin-top:6rem;
     background-color:#3332322c;
     border-radius:3rem;
@@ -321,7 +321,7 @@ body{
 
 
 .network-box{
-    max-width:75rem;
+    max-width:90rem;
     margin:0 auto;
     padding:3rem 2rem;
     text-align: center;
@@ -448,11 +448,11 @@ body{
 .faq-container{
     background-color: #3332322c;
     border-radius:3rem;
-    max-width:75rem;
+    max-width:90rem;
     margin:0 auto;
     padding:3rem 2rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .faq-container h1{
@@ -466,7 +466,7 @@ body{
     border-radius: 1rem;
     border:0.1px solid rgba(41, 41, 41, 0.747);
     line-height: 2.5rem;
-    max-width:50rem;
+    max-width:75rem;
     margin:0 auto;
     margin-bottom:2rem;
 }
@@ -519,18 +519,18 @@ body{
 }
 
 .footer-but{
-    padding:0.7rem 1.7rem;
+    padding:0.5rem 1.9rem;
     border:none;
-    border-radius:0.5rem;
+    border-radius:1.5rem;
     /*   ------Add shadow to the button------  */
-    background:linear-gradient(#13a3a3,cyan);
-    color:white;
-    font-weight: 600;
-    font-size: 1rem;
+    background:linear-gradient(white,white);
+    color:black;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .footer-but:hover{
-    color:#119d9d;
+    color:grey;
 }
 
 .link-lst{
@@ -564,7 +564,7 @@ body{
 
 .quick-link{
     
-    border-radius: 3rem;
+    border-radius: 5rem;
     padding: 0.6rem 2rem;
 }
 
