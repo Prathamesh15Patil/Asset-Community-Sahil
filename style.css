@@ -480,6 +480,7 @@ body{
     padding:1rem;
 }
 .f-icon{
+    width:2rem;
     margin-right:1rem;
     transition: transform 0.2s;
     background-color: white;
