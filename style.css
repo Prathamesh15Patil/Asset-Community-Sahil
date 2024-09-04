@@ -51,7 +51,6 @@ body{
 
 .logo img{
     width:5rem;
-    background-color: #fff;
     border-radius:50%;
 }
 .logo h1{
@@ -81,7 +80,7 @@ body{
     border:none;
     border-radius:2rem;
     /*   ------Add shadow to the button------  */
-    background-color:white;
+    background:linear-gradient(90deg,#00BFFF ,#1E90FF, #7DF9FF);
     color:rgb(0, 0, 0);
     font-weight: 700;
     font-size: 1rem;
@@ -130,7 +129,7 @@ body{
     padding:0.5rem 3rem;
     border:none;
     border-radius:2rem;
-    background-color:white;
+    background:linear-gradient(90deg,#00BFFF ,#1E90FF, #7DF9FF);
     color:black;
     font-weight: 750;
     font-size: 1.5rem;
@@ -194,9 +193,17 @@ body{
 .key-container{
     background-color: black;
     width:100vw;
-    margin-top:10rem;
+    margin-top:6rem;
 }
 
+.about-k{
+    color:white;
+    width:100vh;
+    font-size:1.3rem;
+    text-align: center;
+    margin:0 auto;
+    margin-bottom:2rem;
+}
 .key-box{
     background-color: #3332322c;
     border-radius: 3rem;
@@ -225,7 +232,7 @@ body{
 }
 
 .key{
-    width: 75rem;
+    width: 75vw;
     padding: 1rem;
     background: rgba(75, 75, 75, 0.279);
     border-radius: 15px;
@@ -251,7 +258,6 @@ body{
 
 .academy-box {
     position: relative;
-    z-index: 2; /* Ensure content is above the aurora effect */
     max-width: 90rem;
     margin: 0 auto;
     padding: 3rem 2rem;
@@ -356,6 +362,7 @@ body{
 #partners h1{
     font-size:2.7rem;
 }
+
 .partner-container{
     display:flex;
     gap:2rem;
@@ -365,17 +372,29 @@ body{
     margin-bottom:7rem;
 }
 
+.left-partner,.right-partner{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.center-partner{
+    display:flex;
+    flex-direction: column;
+    align-content: end;
+    padding-top:13.3rem;
+}
 .partner{
-    width:10rem;
-    height:10rem;
+    width:8rem;
+    height:8rem;
     background-color: grey;
-    border-radius: 5rem;
+    border-radius: 50%;
     display:flex;
     justify-content: center;
     align-items: center;
     transition: box-shadow 0.3s ease;
     overflow: hidden;
     position: relative;
+    margin:2.5rem;
 }
 
 .partner:hover{
@@ -524,7 +543,7 @@ body{
     border:none;
     border-radius:1.5rem;
     /*   ------Add shadow to the button------  */
-    background:linear-gradient(white,white);
+    background:linear-gradient(90deg,#00BFFF ,#1E90FF, #7DF9FF);
     color:black;
     font-weight: 700;
     font-size: 1.5rem;
@@ -534,21 +553,7 @@ body{
     color:grey;
 }
 
-.link-lst{
-    list-style: none;
-    color:white;
-}
-.link-lst a{
-    list-style: none;
-    color:white;
-}
-
-.link-lst li {
-    margin-bottom: 0.5rem; 
-}
-
 .footer-logo{
-    background-color: white;
     border-radius: 50%;
     width:5rem;
     margin-bottom:1rem;
@@ -564,11 +569,90 @@ body{
 }
 
 .quick-link{
-    
     border-radius: 5rem;
     padding: 0.6rem 2rem;
 }
 
+.quick-link button{
+    color:white;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.quick-link button:hover{
+    color:rgb(203, 198, 198);
+}
+/*----------------pop-up-----------------*/
+.pop-up{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition:200ms ease-in-out;
+    border:0.1rem solid rgba(111, 111, 111, 0.345);
+    border-radius:2rem;
+    padding:2rem;
+    background-color:  rgba(75, 75, 75, 0.955);
+    z-index:10;
+    width:60rem;
+    max-width:80%;
+}
+
+.pop-up.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+.pop-header{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:2rem;
+}
+
+.pop-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.pop-body{
+    text-align: left;
+    font-size: 1.3rem;
+    max-height:55vh;
+    overflow-y: auto;
+}
+
+#overlay{
+    position:fixed;
+    opacity:0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #080808ac;
+    pointer-events:none;
+    transition:200ms ease-in-out;
+}
+
+#overlay.active{
+    opacity:1;
+    pointer-events:all;
+}
+
+.pop-body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .pop-body::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 50px;  
+    border: 2px solid transparent;
+    height:5px;  
+  }
+  
+  .pop-body::-webkit-scrollbar-thumb:vertical {
+    height: 10px;
+  }
+  
+  
+  
 .f-contact{
     display:flex;
     justify-content: space-between;
