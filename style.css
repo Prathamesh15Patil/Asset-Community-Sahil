@@ -593,7 +593,7 @@ body{
     border:0.1rem solid rgba(111, 111, 111, 0.345);
     border-radius:2rem;
     padding:2rem;
-    background-color:  rgba(75, 75, 75, 0.955);
+    background-color: black;
     z-index:10;
     width:60rem;
     max-width:80%;
