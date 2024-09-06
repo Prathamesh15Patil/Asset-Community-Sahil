@@ -641,7 +641,7 @@ body{
   }
   
   .pop-body::-webkit-scrollbar-thumb {
-    background-color: #888; 
+    background-color: #FFFFFF; 
     border-radius: 50px;  
     border: 2px solid transparent;
     height:5px;  
